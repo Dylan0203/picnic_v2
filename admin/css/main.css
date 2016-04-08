@@ -1,0 +1,105 @@
+/* CSS Document */
+
+.table {
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+
+}
+
+.modify_table {
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-radius: 5px;
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	-webkit-box-shadow: 0px 0px #CBCBCB;
+	box-shadow: 0px 0px #CBCBCB;
+	width:70%;
+}
+
+
+td {
+	border-radius: 5px;
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	margin: 15px;
+	padding: 15px;
+	font-size:14pt;
+
+}
+
+tr {
+	border-radius: 5px;
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	margin: 15px;
+	padding: 15px;
+
+}
+
+a:link {
+	color: red;
+	text-decoration: none;
+
+}
+
+a:hover {
+    color: brown;
+	text-decoration: underline;
+}
+
+a:visited {
+    color: brown;
+	text-decoration: underline;
+}
+
+
+.button {
+	border: none;
+	color: #FFAD00;
+	/*-webkit-box-shadow: 3px 3px 3px #9F9F9F;
+	box-shadow: 3px 3px 3px #9F9F9F;*/
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.button:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24)
+}
+
+
+input {
+	border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+	padding: 10px;
+	text-size:16pt;
+}
+
+form {
+padding: 10px;
+color:#E7E7E7;
+border-radius: 5px;
+
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+table {
+	border-spacing: 0px;
+	padding: 0px;
+
+}
+
+td {
+	
+	padding:0;
+	margin:0;
+	position: relative;
+}
+
+tr {
+	padding:0;	
+	margin:0;
+}
+
+
+.menutable {
+	padding: 4% 15%;
+	width: 100%;
+	height: 100%;
+	border:0; 
+	cellpadding:0;
+	cellspacing:0;
+}
+
+/*menu圖片 */
+
+.menutable img {
+	/*opacity: 0.9;
+	filter: alpha(opacity=90);  For IE8 and earlier */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	display:block; 
+	margin:auto;
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	opacity: 1;
+
+}
+
+
+/*menu圖片 */
+.menutable img:hover {
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;	
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+/*menu文字 */
+.menuslogan {
+	display: block;
+	position: absolute;
+	top: 35%;
+	right: 20%;
+	color: white;
+	text-align: center;
+	bottom: 45%;
+	left: 20%;
+	text-shadow: 0px 0px 15px #000000;
+	text-decoration: overline;
+}
+
+
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+/**************************************
+table
+*************************************
+table {
+	width: 960px;
+	padding: 10px;
+	border: 1px dotted;
+	border-radius: 10px;
+	align: center;
+	text-align: left;
+	text-indent: 10px;
+	box-shadow: 0px 0px 0px;
+}
+*/
+/**************************************
+Menu
+**************************************/
+.menu {
+	background-image: url("../img/menubigback.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top;
+	text-align:center;
+	background-attachment: scroll;
+}

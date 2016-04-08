@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.agree {
+	background-color: #34322F ;
+	background-image: url('../img/flower.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto;
+	list-style-position: outside;
+	margin: 20px;
+	padding: 20px;
+	list-style-type: none;
+	color: #FFFFFF;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 3px #4F4F4F;
+	box-shadow: 2px 2px 3px #4F4F4F;
+	
+}
+
+.bodyimage{
+background-color:#6CC5BA;
+}
+
+.logoinfrom {
+	width: 100%;
+	align: center;
+	clear: both;
+	float: none;
+	left: 10%;
+	right: 10%;
+	text-align: center;
+}
+
+
+.step {
+	text-align: left;
+	float: none;
+	width: 100%;
+	align: center;
+	left: auto;
+	right: auto;
+}
+
+.step1 {
+	background-color: #009688;
+}
+.step2 {
+	background-color: white;
+}
+
+fieldset{
+	border-radius: 7px;
+	border: none;
+	/*border-width: 1px;
+	border-color: #CFCFCF;
+	-webkit-box-shadow: 3px 3px 5px #9B9B9B;
+	box-shadow: 3px 3px 5px #9B9B9B;*/
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+button {
+	border: none;
+	background-color: #34322F;
+	/*-webkit-box-shadow: 3px 3px 3px #9F9F9F;
+	box-shadow: 3px 3px 3px #9F9F9F;*/
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+button:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24)
+}
+
+input {
+	border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+	padding: 10px;
+	text-size:16pt;
+}

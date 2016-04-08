@@ -1,0 +1,48 @@
+/* CSS Document */
+
+.table {
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	padding: 15px;
+	margin: 15px;
+}
+td {
+	border-radius: 5px;
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	margin: 15px;
+	padding: 15px;
+	font-size:14pt;
+
+
+}
+
+tr {
+	border-radius: 5px;
+	border-bottom: 1px dotted #909090;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	margin: 15px;
+	padding: 15px;
+
+}
+
+a:link {
+	color: red;
+	text-decoration: none;
+
+}
+
+a:hover {
+    color: brown;
+	text-decoration: underline;
+}
+
+button {
+color:#FFCC4A
+}

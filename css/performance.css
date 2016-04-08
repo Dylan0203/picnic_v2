@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**************************************
+market
+**************************************/
+
+.performance {
+    margin: 0 8% 0 8%;
+    padding: 0;
+    list-style: none;
+	text-align:center;
+    overflow: hidden; /*底圖延伸*/
+    
+}
+
+ performance li:nth-child(odd) {
+        clear: right;
+		
+    }
+	
+ul {
+	overflow-y: auto;
+	}
+	
+.performance li {
+	width: 21%;
+	margin: 1%;
+	float: left;
+	padding: 1%;
+	background-color: #f5f5f5;
+	color: black;
+	border-width: thin;
+	border-color: #000000;
+	text-align: justify;
+	opacity: 1;	/*-webkit-box-shadow: inset 0px 0px 5px #A1A1A1;
+	box-shadow: inset 0px 0px 5px #A1A1A1;*/
+}
+
+.performance h3, a {
+	color: #58898A;
+
+}
+
+.performance li a p {
+	margin: 0 ;
+	padding: 8%;
+
+}

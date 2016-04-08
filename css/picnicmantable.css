@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+.vote {
+	margin: 0px;
+	text-align: center;	
+	padding:5%;
+}
+.vote ul {
+	list-style: none;
+	padding-right:50px;
+
+}
+
+
+.lottery {
+	background-image: url(../img/flowerback.jpg);
+	background-color: #FF8F91;
+	margin: 0px;
+	padding: 5%;
+	text-align: center;
+	}
+
+	
+table {
+	margin: 2% 10%;
+	width: 80%;
+	border-spacing: 10px; /*調整間距 */
+	border-collapse: separate;
+	padding: 0%;
+	border: thin dotted #FFFFFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-box-shadow: 1px 1px 2px #757474;
+	box-shadow: 1px 1px 3px #757474;
+	background-color: #FFE6E7;
+	opacity: 0.81;
+}
+
+td {
+	padding: 0;
+	margin: 0;
+}
+tr {
+	padding:0;
+	
+}
+
+#gift {
+	background-color: white;
+	text-align: center;
+	padding: 5%;
+	width: 70%;
+	margin: 0;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 2px #757474;
+	box-shadow: 1px 1px 3px #757474;
+}
