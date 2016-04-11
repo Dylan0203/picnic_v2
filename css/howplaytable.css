@@ -46,7 +46,8 @@ ul {
 
 #wrapper {
 	background-image: url(../img/flowerback.jpg);
-	max-width: 100%;
+	background-repeat:no-repeat;
+	width: 100%;
 	margin: 0 auto; /*上右下左 四邊邊界*/
     margin-top: 0;
 	padding: 0 ; /*外圍間距*/

@@ -20,6 +20,10 @@ if($_GET['cancel'] == 1){
 	echo "<script language=javascript>alert('取消完成！')</script>";
 	echo "<body onload=\"window.location='main.php'\";>";
 }
+
+$pro_query = "SELECT DISTINCT team FROM member where register = 1 and pro = 1";
+$pro_result = mysql_query($pro_query);
+$pro_count = mysql_num_rows($pro_result);
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -40,12 +44,13 @@ if($_GET['cancel'] == 1){
 
 	<div style="width:100%;">
 		<form name="searchform" method="post" action="<?php echo "$PHP_SELF?search=1"; ?>">
-			<span style="display:inline-block;width:79%;">員工編號：
+			<span style="display:inline-block;width:59%;">員工編號：
 				<input name="member_no" type="text" id="member_no" size="12" maxlength="12">
 				<input type="submit" name="button2" id="button2" value="查詢" class="button">
 				<?if($_GET['search']==1){ echo "<a href='main.php'>顯示全部</a>";}?>
 			</span>
-			<span style="display:inline-block;width:20%;"><a href=toExcel.php><img src="pics/excel.jpg" border="0"> Excel存檔</a></span>		
+			<span style="display:inline-block;width:20%;">布置達人組數：<?echo $pro_count;?></span>		
+			<span style="display:inline-block;width:20%;"><a href=toExcel.php><img src="pics/excel.jpg" border="0"> Excel存檔</a></span>
 		</form>	
 	</div>
 

@@ -15,18 +15,26 @@ $objPHPExcel->getActiveSheet()->setTitle("參加員工資料"); // 將sheet命�
 $string_type = PHPExcel_Cell_DataType::TYPE_STRING;
 	
 $objPHPExcel->getActiveSheet(0)->setCellValue('A1','編號');
-$objPHPExcel->getActiveSheet(0)->setCellValue('B1','員工編號');
-$objPHPExcel->getActiveSheet(0)->setCellValue('C1','員工姓名');
-$objPHPExcel->getActiveSheet(0)->setCellValue('D1','電話');
-$objPHPExcel->getActiveSheet(0)->setCellValue('E1','成人');
-$objPHPExcel->getActiveSheet(0)->setCellValue('F1','小孩');
+$objPHPExcel->getActiveSheet(0)->setCellValue('B1','組長 - 員工編號');
+$objPHPExcel->getActiveSheet(0)->setCellValue('C1','組長 - 姓名');
+$objPHPExcel->getActiveSheet(0)->setCellValue('D1','組長 - 電話');
+$objPHPExcel->getActiveSheet(0)->setCellValue('E1','組長 - 部門');
+$objPHPExcel->getActiveSheet(0)->setCellValue('F1','組員');
+$objPHPExcel->getActiveSheet(0)->setCellValue('G1','組員');
+$objPHPExcel->getActiveSheet(0)->setCellValue('H1','組員');
+$objPHPExcel->getActiveSheet(0)->setCellValue('I1','組員');
+$objPHPExcel->getActiveSheet(0)->setCellValue('J1','組員');
+$objPHPExcel->getActiveSheet(0)->setCellValue('K1','佈置達人');
 
-$objPHPExcel->getActiveSheet(0)->getColumnDimension('B')->setWidth(15);
-$objPHPExcel->getActiveSheet(0)->getColumnDimension('C')->setWidth(15);
-$objPHPExcel->getActiveSheet(0)->getColumnDimension('D')->setWidth(15);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('E')->setWidth(18);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('F')->setWidth(15);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('G')->setWidth(15);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('H')->setWidth(15);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('I')->setWidth(15);
+$objPHPExcel->getActiveSheet(0)->getColumnDimension('J')->setWidth(15);
 
-$objPHPExcel->getActiveSheet(0)->getStyle('A1:F1')->getFont()->setBold(true);
-$objPHPExcel->getActiveSheet(0)->getStyle('A1:F1')->applyFromArray(
+$objPHPExcel->getActiveSheet(0)->getStyle('A1:K1')->getFont()->setBold(true);
+$objPHPExcel->getActiveSheet(0)->getStyle('A1:K1')->applyFromArray(
 array('fill'     => array(
         'type' => PHPExcel_Style_Fill::FILL_SOLID,
         'color' => array('rgb' => 'CCCCCC')
@@ -34,7 +42,7 @@ array('fill'     => array(
     )
 );
 
-$query = "select * from member order by no asc";
+$query = "SELECT * FROM member WHERE register = 1 and mem_no IN(SELECT DISTINCT team FROM member where register = 1)";
 $result = mysql_query($query);
 $count = mysql_num_rows($result);
 
@@ -50,14 +58,23 @@ while($row = mysql_fetch_object($result)) {
 	$c++;	
 	$objPHPExcel->getActiveSheet(0)->getCellByColumnAndRow($c, $r)->setValueExplicit($row->tel, $string_type);
 	$c++;	
-	$objPHPExcel->getActiveSheet(0)->setCellValueByColumnAndRow($c, $r, $row->adult);
+	$objPHPExcel->getActiveSheet(0)->setCellValueByColumnAndRow($c, $r, $row->dept);
 	$c++;	
-	$objPHPExcel->getActiveSheet(0)->setCellValueByColumnAndRow($c, $r, $row->children);
+	
+	$query2 = "SELECT mem_no, name FROM member WHERE team = ".$row->mem_no." and mem_no != ".$row->mem_no;
+	$result2 = mysql_query($query2);
+	for ( $i=0; $i< 5; $i++ ){
+		list($mem,$name) = mysql_fetch_row($result2);
+		$objPHPExcel->getActiveSheet(0)->setCellValueByColumnAndRow($c, $r, $mem." ".$name);
+		$c++;	
+	}
+	
+	$objPHPExcel->getActiveSheet(0)->setCellValueByColumnAndRow($c, $r, (($row->pro)?"Yes":""));
 	$c++;
 	
 	$r++;
 }
-$str = "A1:F".($r-1);
+$str = "A1:K".($r-1);
 $objPHPExcel->getActiveSheet(0)->getStyle($str)->getBorders()->getAllborders()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
 $objPHPExcel->getActiveSheet(0)->getStyle($str)->getAlignment()->setWrapText(true);
 
