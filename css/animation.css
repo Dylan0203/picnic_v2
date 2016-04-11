@@ -1,5 +1,6 @@
 
 .animation-scaling {
+  pointer-events: none;
   -webkit-animation: 3000ms pulsate infinite alternate ease-in-out;
   -moz-animation: 3000ms pulsate infinite alternate ease-in-out;
   -ms-animation: 3000ms pulsate infinite alternate ease-in-out;
@@ -35,6 +36,7 @@
 
 /* ---------------------------------------------------------- */
 .swing {
+  pointer-events: none;
   -moz-animation: 5s ease 0s normal none infinite swing;
   -moz-transform-origin: center top;
   -webkit-animation:swing 5s infinite ease-in-out;
@@ -44,17 +46,17 @@
 }
 
 @-moz-keyframes swing{
-    0%{-moz-transform:rotate(-3deg)}
-    50%{-moz-transform:rotate(3deg)}
-    100%{-moz-transform:rotate(-3deg)}
+    0%{-moz-transform:rotate(-3deg);}
+    50%{-moz-transform:rotate(3deg);}
+    100%{-moz-transform:rotate(-3deg);}
 }
 @-webkit-keyframes swing{
-    0%{-webkit-transform:rotate(-3deg)}
-    50%{-webkit-transform:rotate(3deg)}
-    100%{-webkit-transform:rotate(-3deg)}
+    0%{-webkit-transform:rotate(-3deg);}
+    50%{-webkit-transform:rotate(3deg);}
+    100%{-webkit-transform:rotate(-3deg);}
 }
 @-ms-keyframes swing{
-    0%{-ms-transform:rotate(-3deg)}
-    50%{-ms-transform:rotate(3deg)}
-    100%{-ms-transform:rotate(-3deg)}
+    0%{-ms-transform:rotate(-3deg);}
+    50%{-ms-transform:rotate(3deg);}
+    100%{-ms-transform:rotate(-3deg);}
 }
