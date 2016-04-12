@@ -284,14 +284,14 @@ FOOTER
 .logo {
 	float: left;
 	line-height: 1em;
-	margin: 0 0 30px 60px;
+	margin: 5% 0 0 10%;
 	padding:1.5%;
-	width: 15%;
+	width: 20%;
+	overflow:hidden;
 }
 
 
 footer {
-	background-color: white;
 }
 
 

@@ -66,16 +66,16 @@ $max_pro = 50;
 </header>
 <div class="logoinfrom"></div>
 <div class="agree">
-                <h2 style="text-align: center">Step 1</h2>
+                <h2 style="text-align: center">報名簡章</h2>
 
-<h4>活動名稱：Fun輕鬆，我們野餐趣<br>
+<h4 style="line-height:200%">活動名稱：Fun輕鬆，我們野餐趣<br>
 活動日期：2016年5月14日(星期六) 下午1時至下午5時<br>
 活動地點：大臺北都會公園&lt;幸福水漾園區&gt;<br>
 報名人數：每組參加二至六人(需內含至少一位員工)，歡迎邀請同事、親朋好友共同參與。<br>
 注意事項：活動保險 與 特別聲明<br></h4>
-<h5>現場提供必要緊急醫療救護，有關本身疾患引起之病症不在承保範圍內，而公共意外險只
+<h5 style="line-height:200%">現場提供必要緊急醫療救護，有關本身疾患引起之病症不在承保範圍內，而公共意外險只
 承保因意外所受之傷害做理賠。本次活動針對報名者投保新台幣300萬元之公共意外險。<span style="font-size: 14px">（所有細節依國泰產險之保險契約為準）</span></h5>
-<h5><li>公共意外險承保範圍：<br></li>
+<h5><!--<li>公共意外險承保範圍：<br></li>
 <ul>(一)被保險人因在保險期間內於活動會場發生意外事故所致第三人體傷、死亡或第三人財
        物損害，依法應負賠償責任，而受賠償請求時，本公司對被保險人負賠償之責。</ul>
 <ul>(二)特別不保事項：</ul>
@@ -84,12 +84,12 @@ $max_pro = 50;
        、高山症、癲癇、脫水等。對於因本身疾患所引起之病症將不在保險範圍內，而公共
         意外險只承擔因外來意外所受之傷害理賠。</ul>
     <ul>3.民眾如遇與跟第二項所述之疾病之病史，建議慎重考慮自身安全，自行加保個人人身
-       意外保險。</ul>
+       意外保險。</ul>-->
 <li>本活動辦法如有未盡事宜，以國泰世華銀行人資部公告事項為主。</li></h5>
-<h4 style="text-align: center"><input type="radio" name="agree" value="0">
-  不同意上述聲明內容。
-  <input type="radio" name="agree" value="1">
- 已詳細閱讀、充分瞭解並同意上述聲明內容。</h4>
+<h4 style="text-align: center"> <input type="radio" name="agree" value="1">
+ 已詳細閱讀、充分瞭解並同意上述聲明內容。<input type="radio" name="agree" value="0">
+  不同意上述聲明內容。</h4>
+ 
     </div>
 
 <div class="step" >
@@ -102,7 +102,7 @@ $max_pro = 50;
             
   </legend>
           <label for="member_no">
-  <h2>員工參加人數最少1人</h2> <p></p>
+  <h2>員工參加人數最少1人</h2><h3>歡迎邀請同事、親朋好友共同參與 </h3><p></p>
   請輸入員工編號
   </label>
   <p></p>
@@ -116,12 +116,11 @@ $max_pro = 50;
           <p><button name="reset" id="reset">重新輸入</button>
             <button name="button1" id="button1">讀取資料</button>
             <button name="button3" id="button3">更新資料</button></p>
-        <?php /*?>（報名步驟說明：進入頁面時只顯示step1，輸入員工編號讀取資料後才顯示step2，且step1不顯示，然後使用者只需輸入電話就可以參加活動。）<?php */?>
+        
 </fieldset>
 
     <form method="post">
         <fieldset class="step2">
-                <h2>Step 2</h2>
 
         <h2>組長資料</h2>
             <legend><span class=""> </span></legend>
