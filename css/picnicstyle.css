@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.picniccontainer {
+	background-color: #34322F;
+	text-align: center;
+		margin:0;
+	padding:1%;
+	color: white;
+	width:100%;
+}
+
+.picniccontainer img{
+	margin:0;
+	padding:0;
+	width:70%;
+}
+
+.picniccontainer h1:first-child {
+	margin: 0;
+	padding: 0;
+}
+
+.backpage{
+ margin:0%;
+ padding:2%;
+ text-color:#000000;
+ background-color:#000000;
+ float:center;
+}

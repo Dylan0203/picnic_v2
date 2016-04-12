@@ -5,25 +5,33 @@
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
+    width: 100%;
 
 }
 
 .modify_table {
-	border-bottom: 1px dotted #909090;
+    border-bottom: 1px dotted #909090;
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
 	border-radius: 5px;
-	background-color: #E5E5E5;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	-webkit-box-shadow: 0px 0px #CBCBCB;
-	box-shadow: 0px 0px #CBCBCB;
-	width:70%;
+	width:100%;
 }
 
+
+.modify_tr {
+
+	margin: 0%;
+	padding: 0%;
+
+}
+
+.modify td {
+
+	margin: 0%;
+	padding: 0%;
+
+}
 
 td {
 	border-radius: 5px;
@@ -31,9 +39,9 @@ td {
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
-	margin: 15px;
-	padding: 15px;
-	font-size:14pt;
+	margin: 1%;
+	padding: 1%;
+	font-size:12pt;
 
 }
 
@@ -67,10 +75,10 @@ a:visited {
 
 .button {
 	border: none;
+    background-color: black;
 	color: #FFAD00;
 	/*-webkit-box-shadow: 3px 3px 3px #9F9F9F;
 	box-shadow: 3px 3px 3px #9F9F9F;*/
-	color: white;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;

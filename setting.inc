@@ -5,8 +5,8 @@ $password = "pic321nic";		/* MySQL的使用者密碼 */
 $dbName = "cathaypicnic";		/* 資料庫名稱*/
 
 //管理頁面登陸帳號密碼
-$adminid='cathayfun';
-$adminpw='cathayfun123';
+$adminid='cathaypicnic';
+$adminpw='cathaypicnic123';
 
 //電子報設定
 $sendermail='service@cathayfun.com.tw';	//寄件者信箱

@@ -136,10 +136,12 @@ img {
 
 .container {
 	background-image: url(../img/picnicfun.jpg);
+	background-size:100%;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
 	color: white;
+	overflow:hidden;
 }
 .container h1:first-child {
 	margin: 0;

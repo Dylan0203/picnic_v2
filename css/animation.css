@@ -34,7 +34,9 @@
   100% { -o-transform: scale(1); }  
 }
 
-/* ---------------------------------------------------------- */
+
+/* -------------------------------
+--------------------------- */
 .swing {
   pointer-events: none;
   -moz-animation: 5s ease 0s normal none infinite swing;

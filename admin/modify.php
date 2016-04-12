@@ -53,7 +53,6 @@ if(count($_POST)){
 <script src="../javascript/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="../css/font-style.css">
-<link rel="stylesheet" type="text/css" href="../css/form.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>報名資料修改</title>
 </head>
@@ -74,7 +73,7 @@ else{ //已報名
 	?>
 	
 <form name="form1" method="post">
-	<table align='center' bgcolor='#fff' width=100% class="table">
+	<table align='center' bgcolor='#fff' class="modify_table">
 		<tr bgcolor="#FFD011" align='center'>
 			<td>組長 - 員工編號</td>
 			<td>組長 - 姓名</td>

@@ -33,7 +33,6 @@ $pro_count = mysql_num_rows($pro_result);
 <head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="../css/font-style.css">
-<link rel="stylesheet" type="text/css" href="../css/form.css">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>報名統計</title>
@@ -44,12 +43,12 @@ $pro_count = mysql_num_rows($pro_result);
 
 	<div style="width:100%;">
 		<form name="searchform" method="post" action="<?php echo "$PHP_SELF?search=1"; ?>">
-			<span style="display:inline-block;width:59%;">員工編號：
+			<span style="display:inline-block;width:59%;color:black;">員工編號：
 				<input name="member_no" type="text" id="member_no" size="12" maxlength="12">
 				<input type="submit" name="button2" id="button2" value="查詢" class="button">
 				<?if($_GET['search']==1){ echo "<a href='main.php'>顯示全部</a>";}?>
 			</span>
-			<span style="display:inline-block;width:20%;">布置達人組數：<?echo $pro_count;?></span>		
+			<span style="display:inline-block;width:20%;color:black;">布置達人組數：<?echo $pro_count;?></span>		
 			<span style="display:inline-block;width:20%;"><a href=toExcel.php><img src="pics/excel.jpg" border="0"> Excel存檔</a></span>
 		</form>	
 	</div>

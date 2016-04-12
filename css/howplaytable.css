@@ -9,7 +9,7 @@ table {
 gallery
 **************************************/
 
-#gallery {
+.gallery {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,7 +17,11 @@ gallery
     
 }
 
-#gallery li:nth-child(4n) {
+.gallery li:hover {
+	background-color:#8A1214;
+}
+
+.gallery li:nth-child(4n) {
         clear: center;
     }
 	
@@ -25,28 +29,30 @@ ul {
 	background-color:#505050;
 	}
 	
-#gallery li {
+.gallery li {
 	float: right;
 	width: 23%;
 	margin: 1%;
-	background-color: #f5f5f5;
-	color: #bdc3c7;
+	background-color:#6C6C6C;
+	color: black;
 	border-width: thin;
 	border-color: #000000;
 	-webkit-box-shadow: inset 0px 0px 5px #A1A1A1;
 	box-shadow: inset 0px 0px 5px #A1A1A1;
 }
 
-#gallery li a p {
+.gallery li a p {
 	margin: 0 ;
 	padding: 2%;
 	font-size: 0.75em;
 }
 
 
+
 #wrapper {
 	background-image: url(../img/flowerback.jpg);
 	background-repeat:no-repeat;
+	background-size: 100%;
 	width: 100%;
 	margin: 0 auto; /*上右下左 四邊邊界*/
     margin-top: 0;
@@ -54,12 +60,55 @@ ul {
 	overflow:auto;
 }
 
-#sub {
+.sub {
 	text-align:center;
 	max-width: 80%;
 	margin: 0 auto; /*上右下左 四邊邊界*/
     margin-top: 0;
 	padding: 0 ; /*外圍間距*/
 }
+
+/**************************************
+cookgallery
+**************************************/
+
+.cookgallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	text-align:center;
+    
+}
+
+.cookgallery li:nth-child(4n) {
+        clear: center;
+    }
+	
+	
+.cookgallery li {
+	float: right;
+	width: 22%;
+	margin: 1%;
+	background-color: #5F0103;
+	color: #bdc3c7;
+	border: thin dotted #000000;
+	-webkit-box-shadow: inset 0px 0px 5px #360000;
+	box-shadow: inset 0px 0px 5px #360000;
+}
+
+.cookgallery iframe {
+	width: 100%;
+	
+}
+
+
+.cookgallery li a p {
+	margin: 0 ;
+	padding: 2%;
+	font-size: 0.75em;
+}
+
+
+
 
 
