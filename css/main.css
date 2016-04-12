@@ -9,10 +9,12 @@
 	display: block;
 	clear: both;
 }
+
 a {
 	text-decoration: none;
 	color: white;
 }
+
 html {
 	/*	max-width:1024px; */
 	margin: 0px;
@@ -25,7 +27,6 @@ html {
 HEADING
 **************************************/
 
-
 header {
 	/**/background-color: white;
 	line-height: 20%;
@@ -36,23 +37,25 @@ header {
 	position: relative;
 	top: 0px;
 }
+
 header ul {
 	margin: 0;
 	padding-right: 50px;
 }
+
 header li {
 	display: inline;
 }
+
 header li a:hover {
 	color: white;
 }
+
 body {
 	margin: 0;
 	padding: 0;
 	border-radius: 5px;
 }
-
-
 
 .backindex {
 	float: left;
@@ -63,10 +66,9 @@ body {
 	overflow:hidden;
 }
 
-
 #fb-root {
 	float: right;
-	line-height: 2em;
+	line-height: 2.5em;
 	position: relative;
 	right: 60px;
 	background: white;
@@ -76,6 +78,7 @@ body {
 	min-width: 40px;
 	min-height: 20px;
 }
+
 .backgroundimage {
 	background-image: url("../img/homemain.jpg");
 	background-repeat: no-repeat;
@@ -83,6 +86,7 @@ body {
 	background-position: top;
 	margin: 0;
 }
+
 .picnicfun-backgroundimage {
 	background-image: url("../img/picnicfun.jpg");
 	background-repeat: repeat;
@@ -95,28 +99,38 @@ body {
 .funnymarket-backgroundimage {
 	background-image: url("../img/funnymarketbackground.jpg");
 	background-repeat: repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: top;
 	margin: 0;
 	padding: 0;
 }
 
-
 img {
 	width: 100%;
 }
+
 .mainsvg {
 	text-align: center;
 	width: 40%;
 	top: 10%;
 	padding: 10% 30% 25% 30%;
-	margin: 0px;
+	margin: 0 0 -3%;
 }
+
 .picnicfunsvg {
 	text-align: center;
 	width: 34%;
 	padding: 10% 33% 10% 33%;
 }
+
+.picnicfunsvg h1 span{
+  display: inline-block;
+}
+
+.picnicfunsvg h3 span{
+  display: inline-block;
+}
+
 .container2 {
 	background-color: #34322F;
 	background-image: url(../img/flower.png);
@@ -127,12 +141,11 @@ img {
 	padding: 0px;
 	color: white;
 }
+
 .container2 h1:first-child {
 	margin: 0;
 	padding: 0;
 }
-
-
 
 .container {
 	background-image: url(../img/picnicfun.jpg);
@@ -143,6 +156,7 @@ img {
 	color: white;
 	overflow:hidden;
 }
+
 .container h1:first-child {
 	margin: 0;
 	padding: 0;
@@ -157,6 +171,7 @@ img {
 	top: 0px;
 	background-size: contain;
 }
+
 .imageright {
 	background-image: url(../img/right.png);
 	background-repeat: no-repeat;
@@ -166,6 +181,7 @@ img {
 	top: 0px;
 	background-size: contain;
 }
+
 .joinbutton {
 	background-color: #009688;
 	background-size: 100%;
@@ -177,21 +193,26 @@ img {
 	margin: 0;
 	padding: 0;
 }
+
 .joinbutton img {
 	margin-top: -0.3%;
 	width: 30%;
 }
+
 /**************************************
 首頁文字編排
 **************************************/
+
 .s2 {
 	margin-right: 20%;
 	margin-bottom: 0;
 	padding: 0;
 }
+
 .s3 {
 	margin-left: 30%;
 }
+
 /**************************************
 section
 **************************************/
@@ -200,6 +221,7 @@ section {
 	margin: 0px;
 	padding: 0px;
 }
+
 /**************************************
 login
 **************************************/
@@ -211,6 +233,7 @@ login
 	font-weight: 300;
 	src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),  url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),  url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
 }
+
 .login {
 	font-family: 'Noto Sans TC', Microsoft JhengHei, sans-serif;
 	font-weight: 900;
@@ -229,9 +252,11 @@ login
 	max-width: 300px;
 	-webkit-box-shadow: 3px 3px 3px #000000;
 }
+
 .login:hover {
 	background: #ebd728;
 }
+
 /**************************************
 flow
 **************************************/
@@ -248,7 +273,6 @@ flow
 /**************************************
 BOXTN
 **************************************/
-
 
 .boxbtn {
 	padding: 10px;
@@ -290,8 +314,5 @@ FOOTER
 	overflow:hidden;
 }
 
-
 footer {
 }
-
-

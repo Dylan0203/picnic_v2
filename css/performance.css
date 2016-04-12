@@ -10,18 +10,16 @@ market
     padding: 0;
     list-style: none;
 	text-align:center;
-    overflow: hidden; /*底圖延伸*/
-    
+    overflow: hidden; /*底圖延伸*/    
 }
 
- performance li:nth-child(odd) {
+performance li:nth-child(odd) {
         clear: right;
-		
-    }
+}
 	
 ul {
 	overflow-y: auto;
-	}
+}
 	
 .performance li {
 	width: 21%;
@@ -39,11 +37,9 @@ ul {
 
 .performance h3, a {
 	color: #58898A;
-
 }
 
 .performance li a p {
 	margin: 0 ;
 	padding: 8%;
-
 }

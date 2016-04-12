@@ -13,8 +13,7 @@ gallery
     margin: 0;
     padding: 0;
     list-style: none;
-	text-align:center;
-    
+	 text-align:center;
 }
 
 .gallery li:hover {
@@ -22,12 +21,12 @@ gallery
 }
 
 .gallery li:nth-child(4n) {
-        clear: center;
-    }
+  clear: center;
+}
 	
 ul {
 	background-color:#505050;
-	}
+}
 	
 .gallery li {
 	float: right;
@@ -47,12 +46,15 @@ ul {
 	font-size: 0.75em;
 }
 
-
+.gallery li:nth-child(5){
+  clear: right;
+}
 
 #wrapper {
 	background-image: url(../img/flowerback.jpg);
+  background-size: cover;
 	background-repeat:no-repeat;
-	background-size: 100%;
+	/* background-size: 100%; */
 	width: 100%;
 	margin: 0 auto; /*上右下左 四邊邊界*/
     margin-top: 0;
@@ -83,8 +85,7 @@ cookgallery
 .cookgallery li:nth-child(4n) {
         clear: center;
     }
-	
-	
+
 .cookgallery li {
 	float: right;
 	width: 22%;
@@ -98,9 +99,7 @@ cookgallery
 
 .cookgallery iframe {
 	width: 100%;
-	
 }
-
 
 .cookgallery li a p {
 	margin: 0 ;
@@ -108,6 +107,9 @@ cookgallery
 	font-size: 0.75em;
 }
 
+.cookgallery li:nth-child(5){
+  clear: right;
+}
 
 
 

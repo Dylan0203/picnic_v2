@@ -14,10 +14,9 @@ market
     
 }
 
-.market li:nth-child(odd) {
+/* .market li:nth-child(odd) {
         clear: right;
-		
-    }
+    } */
 	
 ul {
 	overflow-y: auto;
@@ -39,11 +38,13 @@ ul {
 
 .market h3, a {
 	color: #58898A;
-
 }
 
 .market li a p {
 	margin: 0 ;
 	padding: 8%;
+}
 
+.market li:nth-child(3n+1){
+  clear: left;
 }
